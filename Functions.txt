@@ -1,0 +1,18 @@
+def assignments():
+    if(record[1] == "DL"):
+        record[1] = "Dell"
+    elif(record[1] == "GW"):
+        record[1] = "Gateway"
+    if(record[0] == "D"):
+        record[0] = "Desktop"
+    else:
+        record[0] = "Laptop "
+
+
+def continues():
+    cont = input("Do you want to continue?(y/n)")
+    cont = cont.upper()
+    while(cont != "N") and (cont !="Y"):
+        cont = input("Do you want to continue?(y/n)")
+        cont = cont.upper()
+    return cont
